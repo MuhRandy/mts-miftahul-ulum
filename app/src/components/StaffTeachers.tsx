@@ -1,15 +1,13 @@
-import { Box, Heading, Text, VStack } from "@chakra-ui/react";
+import { Text, VStack } from "@chakra-ui/react";
 import { teachers } from "../utils/utils";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import Content from "./Content";
 
 function StaffTeachers() {
   return (
-    <Box>
-      <Heading size={"lg"} textAlign={"center"} mb={2}>
-        Staff Guru
-      </Heading>
+    <Content title="Staff Guru" textAlign="center">
       <Swiper slidesPerView={1}>
         {teachers.map((teacher, index) => (
           <SwiperSlide key={index}>
@@ -35,7 +33,7 @@ function StaffTeachers() {
           </SwiperSlide>
         ))}
       </Swiper>
-    </Box>
+    </Content>
   );
 }
 

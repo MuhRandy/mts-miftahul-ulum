@@ -7,7 +7,7 @@ import {
   Stack,
   Text,
 } from "@chakra-ui/react";
-import Header from "../src/components/Header";
+import Header from "../src/components/Header/Header";
 import Main from "../src/components/Main";
 import SchoolHistory from "../src/components/SchoolHistory";
 import VisiMisi from "../src/components/VisiMisi";

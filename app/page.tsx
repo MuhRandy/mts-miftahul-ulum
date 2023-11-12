@@ -1,8 +1,8 @@
 "use client";
 
 import Article from "./src/components/Article";
-import Header from "./src/components/Header";
-import { ChakraProvider, Stack } from "@chakra-ui/react";
+import Header from "./src/components/Header/Header";
+import { ChakraProvider, Wrap, WrapItem } from "@chakra-ui/react";
 import Main from "./src/components/Main";
 
 export default function Home() {
@@ -10,13 +10,26 @@ export default function Home() {
     <ChakraProvider>
       <Header />
       <Main>
-        <Stack spacing={3}>
-          <Article />
-          <Article />
-          <Article />
-          <Article />
-          <Article />
-        </Stack>
+        <Wrap mx={"auto"} justify={"center"}>
+          <WrapItem>
+            <Article />
+          </WrapItem>
+          <WrapItem>
+            <Article />
+          </WrapItem>
+          <WrapItem>
+            <Article />
+          </WrapItem>
+          <WrapItem>
+            <Article />
+          </WrapItem>
+          <WrapItem>
+            <Article />
+          </WrapItem>
+          <WrapItem>
+            <Article />
+          </WrapItem>
+        </Wrap>
       </Main>
     </ChakraProvider>
   );

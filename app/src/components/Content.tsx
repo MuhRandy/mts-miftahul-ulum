@@ -3,6 +3,7 @@ import { Container, Divider, Heading } from "@chakra-ui/react";
 type ContentProps = {
   children: any;
   title: string;
+  textAlign?: string;
 };
 
 type SectionProps = {
@@ -10,16 +11,16 @@ type SectionProps = {
   title: string;
 };
 
-function Content({ children, title }: ContentProps) {
+const Content = ({ children, title, textAlign = "left" }: ContentProps) => {
   return (
     <Container>
-      <Heading size={"lg"} mb={2}>
+      <Heading size={"lg"} mb={2} textAlign={textAlign}>
         {title}
       </Heading>
       {children}
     </Container>
   );
-}
+};
 
 const Section = ({ children, title }: SectionProps) => {
   return (
