@@ -8,7 +8,15 @@ import Content from "./Content";
 function StaffTeachers() {
   return (
     <Content title="Staff Guru" textAlign="center">
-      <Swiper slidesPerView={1}>
+      <Swiper
+        slidesPerView={1}
+        breakpoints={{
+          480: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+          },
+        }}
+      >
         {teachers.map((teacher, index) => (
           <SwiperSlide key={index}>
             <VStack>

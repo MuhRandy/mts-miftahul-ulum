@@ -1,4 +1,4 @@
-import { Container, Divider, Heading } from "@chakra-ui/react";
+import { Box, Container, Divider, Heading } from "@chakra-ui/react";
 
 type ContentProps = {
   children: any;
@@ -6,26 +6,23 @@ type ContentProps = {
   textAlign?: string;
 };
 
-type SectionProps = {
-  children: any;
-  title: string;
-};
+type SectionProps = Omit<ContentProps, "textAlign">;
 
 const Content = ({ children, title, textAlign = "left" }: ContentProps) => {
   return (
-    <Container>
-      <Heading size={"lg"} mb={2} textAlign={textAlign}>
+    <Box>
+      <Heading size={{ base: "lg", sm: "xl" }} mb={2} textAlign={textAlign}>
         {title}
       </Heading>
       {children}
-    </Container>
+    </Box>
   );
 };
 
 const Section = ({ children, title }: SectionProps) => {
   return (
     <Container>
-      <Heading size={"md"}>{title}</Heading>
+      <Heading size={{ base: "md", sm: "lg" }}>{title}</Heading>
       <Divider />
       {children}
     </Container>

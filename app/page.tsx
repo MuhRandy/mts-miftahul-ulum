@@ -2,7 +2,7 @@
 
 import Article from "./src/components/Article";
 import Header from "./src/components/Header/Header";
-import { ChakraProvider, Wrap, WrapItem } from "@chakra-ui/react";
+import { ChakraProvider, VStack, Wrap, WrapItem } from "@chakra-ui/react";
 import Main from "./src/components/Main";
 
 export default function Home() {
@@ -10,7 +10,7 @@ export default function Home() {
     <ChakraProvider>
       <Header />
       <Main>
-        <Wrap mx={"auto"} justify={"center"}>
+        <Wrap justify={"center"}>
           <WrapItem>
             <Article />
           </WrapItem>

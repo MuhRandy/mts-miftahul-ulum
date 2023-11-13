@@ -1,4 +1,4 @@
-import { VStack, Wrap, WrapItem } from "@chakra-ui/react";
+import { Wrap, WrapItem } from "@chakra-ui/react";
 import Content from "./Content";
 import Article from "./Article";
 
