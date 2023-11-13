@@ -1,17 +1,11 @@
-"use client";
+'use client';
 
-import {
-  ChakraProvider,
-  Divider,
-  Heading,
-  Stack,
-  Text,
-} from "@chakra-ui/react";
-import Header from "../src/components/Header/Header";
-import Main from "../src/components/Main";
-import SchoolHistory from "../src/components/SchoolHistory";
-import VisiMisi from "../src/components/VisiMisi";
-import StaffTeachers from "../src/components/StaffTeachers";
+import { ChakraProvider, Divider, Stack } from '@chakra-ui/react';
+import Header from '../src/components/Header/Header';
+import Main from '../src/components/Main';
+import SchoolHistory from './SchoolHistory';
+import VisiMisi from './VisiMisi';
+import StaffTeachers from './StaffTeachers';
 
 function Profil() {
   return (

@@ -1,16 +1,16 @@
-"use client";
+'use client';
 
-import Article from "./src/components/Article";
-import Header from "./src/components/Header/Header";
-import { ChakraProvider, VStack, Wrap, WrapItem } from "@chakra-ui/react";
-import Main from "./src/components/Main";
+import Article from './src/components/Article';
+import Header from './src/components/Header/Header';
+import { ChakraProvider, Wrap, WrapItem } from '@chakra-ui/react';
+import Main from './src/components/Main';
 
 export default function Home() {
   return (
     <ChakraProvider>
       <Header />
       <Main>
-        <Wrap justify={"center"}>
+        <Wrap justify={'center'}>
           <WrapItem>
             <Article />
           </WrapItem>

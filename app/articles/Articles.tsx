@@ -1,11 +1,11 @@
-import { Wrap, WrapItem } from "@chakra-ui/react";
-import Content from "./Content";
-import Article from "./Article";
+import { Wrap, WrapItem } from '@chakra-ui/react';
+import Content from '../src/components/Content';
+import Article from '../src/components/Article';
 
 const Articles = () => {
   return (
-    <Content title="Artikel" textAlign="center">
-      <Wrap justify={"center"}>
+    <Content title="Artikel">
+      <Wrap justify={'center'}>
         <WrapItem>
           <Article />
         </WrapItem>
